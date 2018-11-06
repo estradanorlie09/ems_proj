@@ -12,7 +12,7 @@ class Event(models.Model):
     date_from = models.DateField("Start Date")
     date_to = models.DateField("End Date")
     time_from = models.TimeField("Start Time")
-    time_to = models.TextField("End Time")
+    time_to = models.TimeField("End Time")
     venue = models.CharField("Venue", max_length = 100)
     date_created = models.DateTimeField("Date Created",
         auto_now_add = True)
